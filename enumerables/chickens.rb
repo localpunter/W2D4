@@ -8,7 +8,7 @@ chickens = ["Margaret", "Hetty", "Henrietta", "Audrey", "Mabel"]
 
 #each
 # chickens.each {|chicken| puts chicken}
-# chickens.each_with_index { |chicken, index| puts "#{index}. #{chicken}" }
+chickens.each_with_index { |chicken, index| puts "#{index}. #{chicken}" }
 
 
 #find (returns first element that mathces the condition in the brackets)
@@ -31,14 +31,14 @@ chickens = ["Margaret", "Hetty", "Henrietta", "Audrey", "Mabel"]
 #map (preceeds all names in the array with the text "I am")
 # puts chickens.map { |chicken| "I am #{chicken}"}
 
-chickens = [
-  {name: "Margaret", age: 3}
-  {name: "Hetty", age: 6}
-  {name: "Henrietta", age: 1}
-  {name: "Audrey", age: 10}
-  {name: "Mabel", age: 30}
-]
-
-new_chicken = chickens.map {|chicken| Chicken.new(chicken[:name], chicken[:age])}
-
-new_chicken.each {|chicken| puts chicken.squak}
+# chickens = [
+#   {name: "Margaret", age: 3}
+#   {name: "Hetty", age: 6}
+#   {name: "Henrietta", age: 1}
+#   {name: "Audrey", age: 10}
+#   {name: "Mabel", age: 30}
+# ]
+#
+# new_chicken = chickens.map {|chicken| Chicken.new(chicken[:name], chicken[:age])}
+#
+# new_chicken.each {|chicken| puts chicken.squak}
